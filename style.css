@@ -1,0 +1,12 @@
+body{
+    font-family: "Inter";
+}
+
+input{
+    border: none;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+}
