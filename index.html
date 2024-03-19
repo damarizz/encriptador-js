@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
     <head>
@@ -9,25 +8,34 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
         <title>Encriptador</title>
     </head>
 
     <body>
         <header>
-            <h1>Encriptador</h1>
+            <h1>encriptador</h1>
         </header>
-
         <main>
-            <input type="text" placeholder="Ingresa el texto aquí" id="input_texto">
-            <textarea id="output_texto" rows="4" cols="50" readonly></textarea>
-            <button onclick="encriptar();">Encriptar</button>
-            <button onclick="desencriptar();">Desencriptar</button>
-            <button onclick="copiarTexto();">Copiar</button>
+            <section>
+                <textarea placeholder="Ingrese el texto aquí" class="output_texto" id="input_texto" rows="4" cols="50" readonly></textarea>
+                <div>
+                    <p>Solo letras en minúsculas y sin tildes.</p>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptar();">Encriptar</button>
+                    <button onclick="desencriptar();">Desencriptar</button>
+                </div>
+            </section>
+
+            <section>
+                <textarea class="output_texto" id="output_texto" rows="4" cols="50" readonly></textarea>
+                <button onclick="copiarTexto();">Copiar</button>
+            </section>
         </main>
 
         <footer>
-            Damaris Del Carpio | @damarizz
+            Damaris Del Carpio | Alura Latam 2024
         </footer>
 
         <script src="app.js" defer></script>

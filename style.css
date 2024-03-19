@@ -1,8 +1,38 @@
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 body{
-    font-family: "Inter";
+    font-family: "VT323";
+    background: #000000;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
 }
 
 input{
+    border: none;
+    width: 500px;
+}
+
+textarea{
     border: none;
 }
 
