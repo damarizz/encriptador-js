@@ -1,42 +1,104 @@
-.vt323-regular {
+* {
+    background: black;
     font-family: "VT323", monospace;
     font-weight: 400;
+    font-size: 32px;
     font-style: normal;
-  }
-
-body{
-    font-family: "VT323";
-    background: #000000;
+    line-height: 150%;
 }
 
-h1{
-    color: aliceblue;
+header {
     text-align: center;
+}
+
+h1 {
+    color: lightcyan;
     font-size: 50px;
 }
 
-.logo{
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 10%;
+h3{
+    color: lightcyan;
+    font-style: italic;
 }
 
-main{
+main {
     display: flex;
     margin-bottom: 50px;
     margin-left: 80px;
 }
 
-input{
+.input-area {
     border: none;
-    width: 500px;
+    background: black;
+    opacity: 0.6;
+    margin-top: 90px;
+    text-transform: lowercase;
+    color: lightcyan;
+    ::placeholder {
+        color: lightcyan;
+    }
 }
 
-textarea{
-    border: none;
+.input-area:focus {
+    outline: none;
 }
 
-footer{
+.output-area {
+    background: black;
+    opacity: 0.4;
+    border: 1px solid lightcyan;
+    color: aliceblue;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    ::placeholder {
+        color: lightcyan;
+        text-align: center;
+    }
+}
+
+.output-area:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-encriptar,
+.btn-desencriptar,
+.btn-copiar {
+    font-family: "VT323", monospace;
+    border: 1px solid lightcyan;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    background-color: lightcyan;
+    color: black;
+}
+
+.btn-desencriptar {
+    background-color: black;
+    color: lightcyan;
+}
+
+.btn-copiar {
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 18px;
+}
+
+footer {
+    color: lightcyan;
     text-align: center;
     padding: 40px;
+    font-size: 16px;
 }
