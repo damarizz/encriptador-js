@@ -16,10 +16,10 @@
         <h3>&#8258; alura challenge &#8258;</h3>
     </header>
     <main>
-        <section>
-            <textarea id="input_text" class="input-area" placeholder="Ingrese el texto aquí" rows="10" cols="30"></textarea>
-            <div>
-                <h6 class="informacion">Solo letras en minúsculas y sin tildes.</h6>
+        <section class="section1">
+            <textarea id="input_text" class="input-area" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="divinfo">
+                <span class="informacion">Solo letras en minúsculas y sin tildes.</span>
             </div>
             <div class="botones">
                 <button class="btn-encriptar" onclick="encriptar();">Encriptar</button>
@@ -27,19 +27,17 @@
             </div>
         </section>
 
-        <section>
-            <textarea id="output_text" placeholder="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar" class="output-area" rows="10" cols="20" readonly></textarea>
-        </section>
-        <section>
-            <div>
+        <section class="section2">
+            <textarea id="output_text" placeholder="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar" class="output-area" readonly></textarea>
+            <div class="">
                 <button class="btn-copiar" onclick="copiarTexto();">Copiar</button>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- <footer>
         &#169; Damaris Del Carpio | Alura Latam 2024
-    </footer>
+    </footer> -->
 
     <script src="app.js" defer></script>
 </body>
